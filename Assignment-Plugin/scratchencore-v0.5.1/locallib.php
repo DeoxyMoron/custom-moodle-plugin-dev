@@ -26,63 +26,11 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
-
 function test_function_encore(){
-  //echo $OUTPUT->box('lolol');
-  //echo $OUTPUT->footer();
-  //die;
-  $foo = 'projstart';
-  return $foo;
+  echo 'lol'
+  echo $OUTPUT->footer();
+  die;
 }
-
-//function get_json_from_api_url($apiurl){
-//  get_json_from_url($apiurl);
-//
-//}
-
-function get_json_from_url($targeturl){
-
-  //  Initiate curl
-  $ch = curl_init();
-  // Disable SSL verification
-  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-  // Will return the response, if false it print the response
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-  // Set the url
-  curl_setopt($ch, CURLOPT_URL,$targeturl);
-  // Execute
-  $result=curl_exec($ch);
-  // Closing
-  curl_close($ch);
-
-  return $result;
-}
-
-//Example function with example URL
-function get_scratch_data(){
-  $scratch_url = 'https://api.scratch.mit.edu/users/djsanosa/projects/168702903';
-  $scratch_result = get_json_from_url($scratch_url);
-
-  //echo $scratch_result;
-  //echo 'wwwwwwwwww\r\n';
-  //echo $result;
-  //echo $scratch_json['title'];
-  //echo $scratch_json['image'];
-  //print_r($scratch_json);
-
-  return $scratch_result;
-  //foreach($scratch_json as $item){
-//    echo $item;
-//  }
-}
-
-function get_scratch_thumbnail($scratch_result){
-  $scratch_json = json_decode($scratch_result, true);
-  $imageurl = $scratch_json['image'];
-  $image_html = "<img src='{$imageurl}'>";
-  return $image_html;
-}
-
 /*
  * Does something really useful with the passed things
  *

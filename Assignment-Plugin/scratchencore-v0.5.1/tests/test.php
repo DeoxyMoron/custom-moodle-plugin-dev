@@ -31,7 +31,7 @@ function test_function_encore(){
   //echo $OUTPUT->box('lolol');
   //echo $OUTPUT->footer();
   //die;
-  $foo = 'projstart';
+  $foo = 'foobar';
   return $foo;
 }
 

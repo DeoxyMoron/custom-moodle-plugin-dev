@@ -15,20 +15,20 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines the version and other meta-info about the plugin
+ * Redirect the user to the appropriate submission related page
  *
- * Setting the $plugin->version to 0 prevents the plugin from being installed.
- * See https://docs.moodle.org/dev/version.php for more info.
- *
- * @package    mod_scratchencore
- * @copyright  2016 Your Name <your@email.address>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   mod_scratchencore
+ * @category  grade
+ * @copyright 2016 Your Name <your@email.address>
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+require_once(__DIR__ . "../../../config.php");
 
-$plugin->component = 'mod_scratchencore';
-$plugin->version   = 2017091105;
-$plugin->requires  = 2017051500;
-$plugin->release   = "v0.6";
-$plugin->maturity  = MATURITY_STABLE;
+$id = required_param('id', PARAM_INT);// Course module ID.
+// Item number may be != 0 for activities that allow more than one grade per user.
+$itemnumber = optional_param('itemnumber', 0, PARAM_INT);
+$userid = optional_param('userid', 0, PARAM_INT); // Graded user ID (optional).
+
+// In the simplest case just redirect to the view page.
+redirect('view.php?id='.$id);

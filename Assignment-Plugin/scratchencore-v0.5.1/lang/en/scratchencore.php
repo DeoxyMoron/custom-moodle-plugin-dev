@@ -40,4 +40,4 @@ $string['scratchencorename_help'] = 'This is the content of the help tooltip ass
 $string['scratchencore'] = 'scratchencore';
 $string['pluginadministration'] = 'scratchencore administration';
 $string['pluginname'] = 'scratchencore';
-$string['projstart'] = 'projstart:';
+$string['foobar'] = 'FooBar:';

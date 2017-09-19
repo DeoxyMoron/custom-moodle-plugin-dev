@@ -72,22 +72,22 @@ class mod_scratchencore_mod_form extends moodleform_mod {
         //$mform->addElement('static', 'label1', 'scratchencoresetting1', 'Add your link to the scratch project below pls');
 
         //OLD CODE
-        ////$mform->addElement('text', 'projstart', get_string('projstart', 'scratchencore'));
-        ////$mform->setType('projstart', PARAM_NOTAGS);
+        ////$mform->addElement('text', 'foobar', get_string('foobar', 'scratchencore'));
+        ////$mform->setType('foobar', PARAM_NOTAGS);
 
 
-        //DUPLICATION OF NAME BUT FOR projstart
+        //DUPLICATION OF NAME BUT FOR FOOBAR
         $mform->addElement('header', 'scratchencorefieldset', get_string('scratchencorefieldset', 'scratchencore'));
 
-        $mform->addElement('text', 'projstart', get_string('projstart', 'scratchencore'), array('size' => '64'));
+        $mform->addElement('text', 'foobar', get_string('foobar', 'scratchencore'), array('size' => '64'));
         if (!empty($CFG->formatstringstriptags)) {
-            $mform->setType('projstart', PARAM_TEXT);
+            $mform->setType('foobar', PARAM_TEXT);
         } else {
-            $mform->setType('projstart', PARAM_CLEANHTML);
+            $mform->setType('foobar', PARAM_CLEANHTML);
         }
-        $mform->addRule('projstart', null, 'required', null, 'client');
-        $mform->addRule('projstart', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
-        //$mform->addHelpButton('projstart', 'scratchencorename', 'scratchencore');
+        $mform->addRule('foobar', null, 'required', null, 'client');
+        $mform->addRule('foobar', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
+        //$mform->addHelpButton('foobar', 'scratchencorename', 'scratchencore');
 
 
 

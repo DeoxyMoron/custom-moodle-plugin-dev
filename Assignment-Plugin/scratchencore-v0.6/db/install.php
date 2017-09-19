@@ -15,20 +15,28 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines the version and other meta-info about the plugin
+ * Provides code to be executed during the module installation
  *
- * Setting the $plugin->version to 0 prevents the plugin from being installed.
- * See https://docs.moodle.org/dev/version.php for more info.
+ * This file replaces the legacy STATEMENTS section in db/install.xml,
+ * lib.php/modulename_install() post installation hook and partially defaults.php.
  *
  * @package    mod_scratchencore
  * @copyright  2016 Your Name <your@email.address>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+/**
+ * Post installation procedure
+ *
+ * @see upgrade_plugins_modules()
+ */
+function xmldb_scratchencore_install() {
+}
 
-$plugin->component = 'mod_scratchencore';
-$plugin->version   = 2017091105;
-$plugin->requires  = 2017051500;
-$plugin->release   = "v0.6";
-$plugin->maturity  = MATURITY_STABLE;
+/**
+ * Post installation recovery procedure
+ *
+ * @see upgrade_plugins_modules()
+ */
+function xmldb_scratchencore_install_recovery() {
+}

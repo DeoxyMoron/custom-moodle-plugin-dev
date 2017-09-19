@@ -42,6 +42,20 @@ function xmldb_scratchencore_upgrade($oldversion) {
 
     $dbman = $DB->get_manager(); // Loads ddl manager and xmldb classes.
 
+    if ($oldversion < 2017091104) {
+
+        // Define field foo to be added to scratchencore.
+        $table = new xmldb_table('scratchencore');
+        $field = new xmldb_field('foo', XMLDB_TYPE_TEXT, null, null, null, null, null, 'covfefe');
+
+        // Conditionally launch add field foo.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        // Scratchencore savepoint reached.
+        upgrade_mod_savepoint(true, 2017091104, 'scratchencore');
+    }
 
 
     /*

@@ -80,9 +80,9 @@ if ($scratchencore->intro) {
 
 // Print the given API URL
 echo $OUTPUT->heading('Scratch API URL:');
-echo $OUTPUT->box(format_string($scratchencore->projstart));
+echo $OUTPUT->box(format_string($scratchencore->foobar));
 
-$json_result = get_json_from_url($scratchencore->projstart);
+$json_result = get_json_from_url($scratchencore->foobar);
 
 // Print the retrieved JSON result
 echo $OUTPUT->heading('Scratch JSON data:');
