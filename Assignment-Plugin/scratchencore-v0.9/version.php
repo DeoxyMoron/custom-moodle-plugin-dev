@@ -28,7 +28,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'mod_scratchencore';
-$plugin->version   = 2017092100;
+$plugin->version   = 2017110200;
 $plugin->requires  = 2017051500;
-$plugin->release   = "v0.7";
+$plugin->release   = "v0.9";
 $plugin->maturity  = MATURITY_STABLE;

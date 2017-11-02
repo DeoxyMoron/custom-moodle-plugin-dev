@@ -15,10 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines the version and other meta-info about the plugin
+ * Internal library of functions for module scratchencore
  *
- * Setting the $plugin->version to 0 prevents the plugin from being installed.
- * See https://docs.moodle.org/dev/version.php for more info.
+ * All the scratchencore specific functions, needed to implement the module
+ * logic, should go here. Never include this file from your lib.php!
  *
  * @package    mod_scratchencore
  * @copyright  2016 Your Name <your@email.address>
@@ -26,9 +26,17 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
-
-$plugin->component = 'mod_scratchencore';
-$plugin->version   = 2017092100;
-$plugin->requires  = 2017051500;
-$plugin->release   = "v0.7";
-$plugin->maturity  = MATURITY_STABLE;
+function test_function_encore(){
+  echo 'lol'
+  echo $OUTPUT->footer();
+  die;
+}
+/*
+ * Does something really useful with the passed things
+ *
+ * @param array $things
+ * @return object
+ *function scratchencore_do_something_useful(array $things) {
+ *    return new stdClass();
+ *}
+ */

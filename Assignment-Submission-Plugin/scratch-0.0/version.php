@@ -15,20 +15,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines the version and other meta-info about the plugin
+ * This file contains the version information for the scratch submission plugin
  *
- * Setting the $plugin->version to 0 prevents the plugin from being installed.
- * See https://docs.moodle.org/dev/version.php for more info.
- *
- * @package    mod_scratchencore
- * @copyright  2016 Your Name <your@email.address>
+ * @package    assignsubmission_scratch
+ * @copyright 2012 NetSpot {@link http://www.netspot.com.au}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'mod_scratchencore';
-$plugin->version   = 2017092100;
-$plugin->requires  = 2017051500;
-$plugin->release   = "v0.7";
-$plugin->maturity  = MATURITY_STABLE;
+$plugin->version   = 2017110200;
+$plugin->requires  = 2017110200;
+$plugin->component = 'assignsubmission_scratch';

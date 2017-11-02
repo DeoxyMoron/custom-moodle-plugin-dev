@@ -1,0 +1,807 @@
+{
+	"objName": "Stage",
+	"scripts": [[86, 57, [["whenGreenFlag"], ["startScene", "baseball-field"]]],
+		[90, 168, [["whenIReceive", "homerum"], ["startScene", "brick wall2"]]],
+		[56, 266, [["whenIReceive", "homerun2"], ["startScene", "baseball-field"]]],
+		[69, 340, [["whenIReceive", "outfield"], ["startScene", "playing-field"]]],
+		[43, 421, [["whenIReceive", "outfield3"], ["startScene", "baseball-field"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "baseball-field",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6b3d87ba2a7f89be703163b6c1d4c964.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "brick wall2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "82d867fcd9f1b5f49e29c2f853d55665.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "playing-field",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2de108f3098e92f5c5976cf75d38e99d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 3,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Anina Hip-Hop",
+			"scripts": [[26, 52, [["whenGreenFlag"], ["hide"]]],
+				[21, 148, [["whenIReceive", "message1"], ["show"]]],
+				[21, 233, [["whenIReceive", "homerum"], ["hide"]]],
+				[24, 326, [["whenIReceive", "outfield"], ["hide"]]],
+				[228, 51, [["whenIReceive", "outfield3"], ["show"]]]],
+			"sounds": [{
+					"soundName": "dance celebrate",
+					"soundID": -1,
+					"md5": "0edb8fb88af19e6e17d0f8cf64c1d136.wav",
+					"sampleCount": 176401,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "anina stance",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95a05adaa91532651a4b79d5ba3ebe49.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 76,
+					"rotationCenterY": 252
+				},
+				{
+					"costumeName": "anina top stand",
+					"baseLayerID": -1,
+					"baseLayerMD5": "34d6362cb4030d92be6fec73300f0aec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 74,
+					"rotationCenterY": 280
+				},
+				{
+					"costumeName": "anina top R step",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0477f7105d02b9a902382eca080476dc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 248,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "anina top L step",
+					"baseLayerID": -1,
+					"baseLayerMD5": "62a89d8c6f7680e342132fcde59b2a5d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 228,
+					"rotationCenterY": 274
+				},
+				{
+					"costumeName": "anina top freeze",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd67565519bdebea1b931deb19621384.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 110,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina R cross",
+					"baseLayerID": -1,
+					"baseLayerMD5": "22f3ca23b2f0ac67f8ebc36a8c3116a0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 126,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina pop front",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c163f1002f61421816386e52522b9133.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 68,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "anina pop down",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e9e54ff1fa61c71507e25540d0326177.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 74,
+					"rotationCenterY": 156
+				},
+				{
+					"costumeName": "anina pop left",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9fda30f66d51b2ad5f6fe11d57e199d6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "anina pop right",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc2594e9278494e82f725be34369f178.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 66,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina pop L arm",
+					"baseLayerID": -1,
+					"baseLayerMD5": "843bff4a5ee3d61fd8cbd419cb2797a3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 68,
+					"rotationCenterY": 274
+				},
+				{
+					"costumeName": "anina pop stand",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de7cab2c8d567d49a5a1f378b5709bb4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 76,
+					"rotationCenterY": 276
+				},
+				{
+					"costumeName": "anina pop R arm",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7e1a86233b7ad28d6ee9970b152be20.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 88,
+					"rotationCenterY": 272
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 137,
+			"scratchY": 2,
+			"scale": 0.4500000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Jackie-Robinson-psd33888",
+			"scripts": [[12,
+					43,
+					[["whenGreenFlag"],
+						["say:duration:elapsed:from:", "Hey! I'm Jackie Robinson!", 2],
+						["say:duration:elapsed:from:", "I was the first African American to play for Major League Baseball.", 4],
+						["say:duration:elapsed:from:", "Today, I'm going to teach you the game of baseball.", 4],
+						["say:duration:elapsed:from:", "Let's run a simulation.", 2],
+						["broadcast:", "message1"],
+						["wait:elapsed:from:", 3],
+						["say:duration:elapsed:from:", "To begin, you have one batter standing at home plate.", 3],
+						["say:duration:elapsed:from:", "On the other team you have 1 pitcher, 1 person per base, and outfielders.", 4],
+						["broadcast:", "message2"]]],
+				[25,
+					307,
+					[["whenIReceive", "homerum"],
+						["say:duration:elapsed:from:", "Wow a homerun! ", 2],
+						["say:duration:elapsed:from:", "Now you can run around all the bases and score a point for your team.", 2],
+						["say:duration:elapsed:from:", "If you already have team mates on other bases they can also score!", 2],
+						["broadcast:", "homerun2"]]],
+				[29,
+					455,
+					[["whenIReceive", "outfield"],
+						["say:duration:elapsed:from:", "Your ball is in the outfield.", 2],
+						["say:duration:elapsed:from:", "Try to get to the furthest base possible.", 2],
+						["say:duration:elapsed:from:", "If someone catches the ball you're automatically out.", 2],
+						["say:duration:elapsed:from:", "If not, if they touch you with the ball when you're not on a base, you're also out.", 2]]],
+				[32,
+					591,
+					[["whenIReceive", "outfield4"],
+						["say:duration:elapsed:from:", "Looks like you decided to stop at 2nd base.", 2],
+						["say:duration:elapsed:from:", "Good choice. You got there quick enough.", 2],
+						["say:duration:elapsed:from:", "Now another player will go up.", 2]]],
+				[453,
+					24,
+					[["whenIReceive", "infield2"],
+						["say:duration:elapsed:from:", "Looks like your ball is infield.", 2],
+						["say:duration:elapsed:from:", "Try to get to a base before they get you.", 2],
+						["broadcast:", "infield3"]]],
+				[539, 151, [["whenIReceive", "infield3"], ["say:duration:elapsed:from:", "Looks like you got out. Better luck next time.", 2]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Jackie-Robinson-psd33888",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b19052e92853b4afba4d1080a32702b7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 318,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -194,
+			"scratchY": -123,
+			"scale": 0.35000000000000014,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Anina Hip-Hop4",
+			"scripts": [[26, 52, [["whenGreenFlag"], ["hide"]]],
+				[21, 148, [["whenIReceive", "message1"], ["show"]]],
+				[30, 248, [["whenIReceive", "homerum"], ["hide"]]],
+				[55, 341, [["whenIReceive", "outfield"], ["hide"]]],
+				[34, 459, [["whenIReceive", "outfield3"], ["show"]]]],
+			"sounds": [{
+					"soundName": "dance celebrate",
+					"soundID": -1,
+					"md5": "0edb8fb88af19e6e17d0f8cf64c1d136.wav",
+					"sampleCount": 176401,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "anina stance",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d01c961449223f9e61dda9281100806.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 76,
+					"rotationCenterY": 252
+				},
+				{
+					"costumeName": "anina top stand",
+					"baseLayerID": -1,
+					"baseLayerMD5": "34d6362cb4030d92be6fec73300f0aec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 74,
+					"rotationCenterY": 280
+				},
+				{
+					"costumeName": "anina top R step",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0477f7105d02b9a902382eca080476dc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 248,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "anina top L step",
+					"baseLayerID": -1,
+					"baseLayerMD5": "62a89d8c6f7680e342132fcde59b2a5d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 228,
+					"rotationCenterY": 274
+				},
+				{
+					"costumeName": "anina top freeze",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd67565519bdebea1b931deb19621384.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 110,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina R cross",
+					"baseLayerID": -1,
+					"baseLayerMD5": "22f3ca23b2f0ac67f8ebc36a8c3116a0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 126,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina pop front",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c163f1002f61421816386e52522b9133.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 68,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "anina pop down",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e9e54ff1fa61c71507e25540d0326177.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 74,
+					"rotationCenterY": 156
+				},
+				{
+					"costumeName": "anina pop left",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9fda30f66d51b2ad5f6fe11d57e199d6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "anina pop right",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc2594e9278494e82f725be34369f178.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 66,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina pop L arm",
+					"baseLayerID": -1,
+					"baseLayerMD5": "843bff4a5ee3d61fd8cbd419cb2797a3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 68,
+					"rotationCenterY": 274
+				},
+				{
+					"costumeName": "anina pop stand",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de7cab2c8d567d49a5a1f378b5709bb4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 76,
+					"rotationCenterY": 276
+				},
+				{
+					"costumeName": "anina pop R arm",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7e1a86233b7ad28d6ee9970b152be20.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 88,
+					"rotationCenterY": 272
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 1,
+			"scratchY": -13,
+			"scale": 0.4500000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Anina Hip-Hop3",
+			"scripts": [[26, 52, [["whenGreenFlag"], ["hide"]]],
+				[21, 148, [["whenIReceive", "message1"], ["show"]]],
+				[20, 231, [["whenIReceive", "outfield"], ["hide"]]],
+				[47, 374, [["whenIReceive", "homerum"], ["hide"]]],
+				[31,
+					457,
+					[["whenIReceive", "homerun2"],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 2, 67, 6],
+						["say:duration:elapsed:from:", "I'm going to pick up the ball and try to touch the other player with it.", 2],
+						["broadcast:", "outfield3"]]],
+				[292, 35, [["whenIReceive", "outfield3"], ["gotoX:y:", -151, -26]]]],
+			"sounds": [{
+					"soundName": "dance celebrate",
+					"soundID": -1,
+					"md5": "0edb8fb88af19e6e17d0f8cf64c1d136.wav",
+					"sampleCount": 176401,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "anina stance",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d01c961449223f9e61dda9281100806.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 76,
+					"rotationCenterY": 252
+				},
+				{
+					"costumeName": "anina top stand",
+					"baseLayerID": -1,
+					"baseLayerMD5": "34d6362cb4030d92be6fec73300f0aec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 74,
+					"rotationCenterY": 280
+				},
+				{
+					"costumeName": "anina top R step",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0477f7105d02b9a902382eca080476dc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 248,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "anina top L step",
+					"baseLayerID": -1,
+					"baseLayerMD5": "62a89d8c6f7680e342132fcde59b2a5d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 228,
+					"rotationCenterY": 274
+				},
+				{
+					"costumeName": "anina top freeze",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd67565519bdebea1b931deb19621384.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 110,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina R cross",
+					"baseLayerID": -1,
+					"baseLayerMD5": "22f3ca23b2f0ac67f8ebc36a8c3116a0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 126,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina pop front",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c163f1002f61421816386e52522b9133.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 68,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "anina pop down",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e9e54ff1fa61c71507e25540d0326177.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 74,
+					"rotationCenterY": 156
+				},
+				{
+					"costumeName": "anina pop left",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9fda30f66d51b2ad5f6fe11d57e199d6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "anina pop right",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc2594e9278494e82f725be34369f178.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 66,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina pop L arm",
+					"baseLayerID": -1,
+					"baseLayerMD5": "843bff4a5ee3d61fd8cbd419cb2797a3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 68,
+					"rotationCenterY": 274
+				},
+				{
+					"costumeName": "anina pop stand",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de7cab2c8d567d49a5a1f378b5709bb4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 76,
+					"rotationCenterY": 276
+				},
+				{
+					"costumeName": "anina pop R arm",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7e1a86233b7ad28d6ee9970b152be20.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 88,
+					"rotationCenterY": 272
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -151,
+			"scratchY": -26,
+			"scale": 0.4500000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Anina Hip-Hop2",
+			"scripts": [[26, 52, [["whenGreenFlag"], ["hide"]]],
+				[21, 148, [["whenIReceive", "message1"], ["show"]]],
+				[10, 10, [["whenIReceive", "homerum"], ["hide"]]],
+				[27, 239, [["whenIReceive", "outfield"], ["hide"]]],
+				[65, 353, [["whenIReceive", "outfield3"], ["show"]]],
+				[36, 436, [["whenIReceive", "infield3"], ["glideSecs:toX:y:elapsed:from:", 1, 169, -111]]]],
+			"sounds": [{
+					"soundName": "dance celebrate",
+					"soundID": -1,
+					"md5": "0edb8fb88af19e6e17d0f8cf64c1d136.wav",
+					"sampleCount": 176401,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "anina stance",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d01c961449223f9e61dda9281100806.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 76,
+					"rotationCenterY": 252
+				},
+				{
+					"costumeName": "anina top stand",
+					"baseLayerID": -1,
+					"baseLayerMD5": "34d6362cb4030d92be6fec73300f0aec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 74,
+					"rotationCenterY": 280
+				},
+				{
+					"costumeName": "anina top R step",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0477f7105d02b9a902382eca080476dc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 248,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "anina top L step",
+					"baseLayerID": -1,
+					"baseLayerMD5": "62a89d8c6f7680e342132fcde59b2a5d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 228,
+					"rotationCenterY": 274
+				},
+				{
+					"costumeName": "anina top freeze",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd67565519bdebea1b931deb19621384.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 110,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina R cross",
+					"baseLayerID": -1,
+					"baseLayerMD5": "22f3ca23b2f0ac67f8ebc36a8c3116a0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 126,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina pop front",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c163f1002f61421816386e52522b9133.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 68,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "anina pop down",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e9e54ff1fa61c71507e25540d0326177.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 74,
+					"rotationCenterY": 156
+				},
+				{
+					"costumeName": "anina pop left",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9fda30f66d51b2ad5f6fe11d57e199d6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "anina pop right",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc2594e9278494e82f725be34369f178.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 66,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "anina pop L arm",
+					"baseLayerID": -1,
+					"baseLayerMD5": "843bff4a5ee3d61fd8cbd419cb2797a3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 68,
+					"rotationCenterY": 274
+				},
+				{
+					"costumeName": "anina pop stand",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de7cab2c8d567d49a5a1f378b5709bb4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 76,
+					"rotationCenterY": 276
+				},
+				{
+					"costumeName": "anina pop R arm",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7e1a86233b7ad28d6ee9970b152be20.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 88,
+					"rotationCenterY": 272
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 169,
+			"scratchY": -111,
+			"scale": 0.4500000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Baseball",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[5,
+					76,
+					[["whenIReceive", "message2"],
+						["gotoX:y:", 22, -15],
+						["show"],
+						["wait:elapsed:from:", 1],
+						["glideSecs:toX:y:elapsed:from:", 1, -65, -4],
+						["doIf", ["color:sees:", -1, -350947], [["gotoSpriteOrMouse:", "_random_"]]]]],
+				[330,
+					31,
+					[["whenIReceive", "homerum"],
+						["gotoX:y:", -19, -134],
+						["turnRight:", 360],
+						["glideSecs:toX:y:elapsed:from:", 1, -144, 14],
+						["glideSecs:toX:y:elapsed:from:", 1, -91, 127],
+						["glideSecs:toX:y:elapsed:from:", 1, 24, 175],
+						["hide"]]],
+				[342,
+					217,
+					[["whenIReceive", "outfield"],
+						["hide"],
+						["wait:elapsed:from:", 1],
+						["gotoX:y:", -231, 160],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 3, -109, -26],
+						["glideSecs:toX:y:elapsed:from:", 1, -52, 12],
+						["setSizeTo:", 70],
+						["glideSecs:toX:y:elapsed:from:", 1, 52, -21],
+						["setSizeTo:", 50],
+						["glideSecs:toX:y:elapsed:from:", 1, 103, -28],
+						["setSizeTo:", 20],
+						["broadcast:", "outfield 2"]]],
+				[335, 541, [["whenIReceive", "outfield3"], ["hide"]]],
+				[588,
+					35,
+					[["whenIReceive", "infield"],
+						["gotoX:y:", -20, -14],
+						["setSizeTo:", 50],
+						["glideSecs:toX:y:elapsed:from:", 1, 75, -3],
+						["glideSecs:toX:y:elapsed:from:", 1, 123, -69],
+						["setRotationStyle", "left-right"],
+						["glideSecs:toX:y:elapsed:from:", 2, 186, -101],
+						["broadcast:", "infield2"],
+						["wait:elapsed:from:", 1],
+						["glideSecs:toX:y:elapsed:from:", 1, -157, -23],
+						["broadcast:", "infield3"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "baseball",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e13ef53885d2cfca9a54cc5c3f6c20f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 34,
+					"rotationCenterY": 31
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 103,
+			"scratchY": -28,
+			"scale": 0.2,
+			"direction": 90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[34, 77, [["whenGreenFlag"], ["hide"]]],
+				[22, 160, [["whenIReceive", "message1"], ["show"]]],
+				[10, 10, [["whenIReceive", "homerum"], ["hide"]]],
+				[5, 243, [["whenIReceive", "homerum"], ["startScene", "brick wall2"]]],
+				[22,
+					321,
+					[["whenIReceive", "homerun2"],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 2, -152, -66],
+						["glideSecs:toX:y:elapsed:from:", 2, 57, -69],
+						["glideSecs:toX:y:elapsed:from:", 2, 129, -19],
+						["glideSecs:toX:y:elapsed:from:", 2, -30, -7],
+						["say:duration:elapsed:from:", "Yay!", 2],
+						["glideSecs:toX:y:elapsed:from:", 1, -33, 16],
+						["glideSecs:toX:y:elapsed:from:", 1, -38, -10],
+						["glideSecs:toX:y:elapsed:from:", 1, -39, 13],
+						["glideSecs:toX:y:elapsed:from:", 1, -44, -14]]],
+				[273, 21, [["whenIReceive", "outfield"], ["hide"]]],
+				[260,
+					91,
+					[["whenIReceive", "outfield3"],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 1, -157, -67],
+						["glideSecs:toX:y:elapsed:from:", 1, 56, -75],
+						["broadcast:", "outfield4"]]],
+				[263, 245, [["whenIReceive", "infield"], ["show"], ["gotoX:y:", -42, -6]]],
+				[273, 361, [["whenIReceive", "infield3"], ["glideSecs:toX:y:elapsed:from:", 3, -91, -30]]],
+				[507, 16, [["whenIReceive", "message2"], ["gotoX:y:", -44, -14]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09dc888b0b7df19f70d81588ae73420e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3696356a03a8d938318876a593572843.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -44,
+			"scratchY": -14,
+			"scale": 0.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "173330077",
+		"spriteCount": 7,
+		"videoOn": false,
+		"swfVersion": "v456",
+		"flashVersion": "WIN 26,0,0,151",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/60.0.3112.113 Safari\/537.36",
+		"scriptCount": 49
+	}
+}

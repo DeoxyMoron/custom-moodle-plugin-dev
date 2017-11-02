@@ -15,20 +15,29 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines the version and other meta-info about the plugin
+ * Post-install code for the submission_scratch module.
  *
- * Setting the $plugin->version to 0 prevents the plugin from being installed.
- * See https://docs.moodle.org/dev/version.php for more info.
- *
- * @package    mod_scratchencore
- * @copyright  2016 Your Name <your@email.address>
+ * @package assignsubmission_scratch
+ * @copyright 2012 NetSpot {@link http://www.netspot.com.au}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'mod_scratchencore';
-$plugin->version   = 2017092100;
-$plugin->requires  = 2017051500;
-$plugin->release   = "v0.7";
-$plugin->maturity  = MATURITY_STABLE;
+
+/**
+ * Code run after the assignsubmission_scratch module database tables have been created.
+ * Moves the plugin to the top of the list (of 3)
+ * @return bool
+ */
+function xmldb_assignsubmission_scratch_install() {
+    global $CFG;
+
+    // Set the correct initial order for the plugins.
+    require_once($CFG->dirroot . '/mod/assign/adminlib.php');
+    $pluginmanager = new assign_plugin_manager('assignsubmission');
+
+    $pluginmanager->move_plugin('scratch', 'up');
+    $pluginmanager->move_plugin('scratch', 'up');
+
+    return true;
+}

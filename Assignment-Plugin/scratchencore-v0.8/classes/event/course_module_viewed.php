@@ -15,20 +15,34 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines the version and other meta-info about the plugin
- *
- * Setting the $plugin->version to 0 prevents the plugin from being installed.
- * See https://docs.moodle.org/dev/version.php for more info.
+ * Defines the view event.
  *
  * @package    mod_scratchencore
  * @copyright  2016 Your Name <your@email.address>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace mod_scratchencore\event;
+
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'mod_scratchencore';
-$plugin->version   = 2017092100;
-$plugin->requires  = 2017051500;
-$plugin->release   = "v0.7";
-$plugin->maturity  = MATURITY_STABLE;
+/**
+ * The mod_scratchencore instance viewed event class
+ *
+ * If the view mode needs to be stored as well, you may need to
+ * override methods get_url() and get_legacy_log_data(), too.
+ *
+ * @package    mod_scratchencore
+ * @copyright  2016 Your Name <your@email.address>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class course_module_viewed extends \core\event\course_module_viewed {
+
+    /**
+     * Initialize the event
+     */
+    protected function init() {
+        $this->data['objecttable'] = 'scratchencore';
+        parent::init();
+    }
+}

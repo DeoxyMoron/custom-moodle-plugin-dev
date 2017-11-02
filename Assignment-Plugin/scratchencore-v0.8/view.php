@@ -62,7 +62,7 @@ $event->trigger();
 $PAGE->set_url('/mod/scratchencore/view.php', array('id' => $cm->id));
 $PAGE->set_title(format_string($scratchencore->name));
 $PAGE->set_heading(format_string($course->fullname));
-$PAGE->requires->js
+$PAGE->requires->js;
 
 /*
  * Other things you may want to set - remove if not needed.
@@ -75,20 +75,22 @@ $PAGE->requires->js
  //get our javascript all ready to go
  //We can omit $jsmodule, but its nice to have it here,
  //if for example we need to include some funky YUI stuff
- $jsmodule = array(
- 	'name'     => 'mod_scratchencore',
- 	'fullpath' => '/mod/scratchencore/test.js',
- 	'requires' => array()
- );
- //here we set up any info we need to pass into javascript
- $opts =Array();
- $opts['someinstancesetting'] = "bee";
 
 
- //this inits the M.mod_@@newmodule@@ thingy, after the page has loaded.
- $PAGE->requires->js_init_call('M.mod_scratchencore.helper.init', array($opts),false,$jsmodule);
+$jsmodule = array(
+	'name'     => 'mod_scratchencore',
+	'fullpath' => '/mod/scratchencore/module.js',
+	'requires' => array()
+);
+//here we set up any info we need to pass into javascript
+$opts =Array();
+$opts['someinstancesetting'] = "bee";
 
 
+//this inits the M.mod_@@newmodule@@ thingy, after the page has loaded.
+$PAGE->requires->js_init_call('M.mod_scratchencore.helper.init', array($opts),false,$jsmodule);
+//$PAGE->requires->js_init_call('[YOUR FUNCTION NAME]', $YOURPARAMS);
+//$PAGE->requires->js_init_call('[YOUR FUNCTION NAME]', $YOURPARAMS);
 
 
 
@@ -105,15 +107,29 @@ echo $OUTPUT->heading('Scratch API URL:');
 echo $OUTPUT->box(format_string($scratchencore->projstart));
 
 $json_result = get_json_from_url($scratchencore->projstart);
-
-// Print the retrieved JSON result
+//-------VERSION 2--------//
 echo $OUTPUT->heading('Scratch JSON data:');
 echo $OUTPUT->box(format_string($json_result));
 
+$opts['json'] = $json_result;
+$finalcount = $PAGE->requires->js_init_call('M.mod_scratchencore.helper.main', array($opts),false,$jsmodule);
+
+echo $OUTPUT->heading('Number of Green Flag blocks:');
+//echo $OUTPUT->box(format_string("hhhhh"));
+echo $OUTPUT->box(format_string($finalcount));
+
+echo '<div id="foobar">';
+echo '</div>';
+
+// -----------VERSION 1---------- //
+// Print the retrieved JSON result
+////echo $OUTPUT->heading('Scratch JSON data:');
+////echo $OUTPUT->box(format_string($json_result));
+
 // Retrieve and display the thumbnail
 // Print the retrieved JSON result
-echo $OUTPUT->heading('Project Thumbnail:');
-echo $OUTPUT->box(get_scratch_thumbnail($json_result));
+////echo $OUTPUT->heading('Project Thumbnail:');
+////echo $OUTPUT->box(get_scratch_thumbnail($json_result));
 
 //Get scratch JSON from hardcoded URL and retrieve thumbnail
 //$scrach_json_encoded = get_scratch_data();
